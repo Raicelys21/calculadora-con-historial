@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora con historial</title>
+</head>
+<body>
+    <div class="calculadora">
+        <class class="pantalla">
+            <textarea id="pantalla" rows="3"></textarea>
+        </class>
+        <div class="numeros">
+            <button class="num" onclick="addValue(value)" id="0" value="0"> 0</button>
+            <button class="num" onclick="addValue(value)" id="1" value="1"> 1</button>
+            <button class="num" onclick="addValue(value)" id="2" value="2"> 2</button>
+            <button class="num" onclick="addValue(value)" id="3" value="3"> 3</button>
+            <button class="num" onclick="addValue(value)" id="4" value="4"> 4</button>
+            <button class="num" onclick="addValue(value)" id="5" value="5"> 5</button>
+            <button class="num" onclick="addValue(value)" id="6" value="6"> 6</button>
+            <button class="num" onclick="addValue(value)" id="7" value="7"> 7</button>
+            <button class="num" onclick="addValue(value)" id="8" value="8"> 8</button>
+            <button class="num" onclick="addValue(value)" id="9" value="9"> 9</button>
+        </div>
+        <div class="operadores">
+            <button id="suma" onclick="addValue(value)" value="+"> +</button>
+            <button id="resta" onclick="addValue(value)" value="-"> -</button>
+            <button id="division" onclick="addValue(value)" value="/"> /</button>
+            <button id="multiplicacion" onclick="addValue(value)" value="*"> *</button>
+        </div>
+        <div class="operadores-especiales">
+            <button id="limpiar" onclick="clearAll()"> Limpiar</button>
+            <button id="=" onclick="result()"> = </button>
+        </div>
+    </div>
+
+    <div class="historial">
+        <h1>Historial</h1>
+        <div id="lista">
+        </div>
+    </div>
+</body>
+
+<footer>
+    <script src="script.js"></script>
+</footer>
+</html>
